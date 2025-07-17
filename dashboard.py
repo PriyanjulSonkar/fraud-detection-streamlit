@@ -5,7 +5,7 @@ import datetime
 import os
 
 # Load the model
-model = joblib.load("model/model.pkl")
+model = joblib.load("../model/model.pkl")
 
 st.set_page_config(page_title="Fraud Detection Dashboard", layout="centered")
 st.title("🚨 Insurance Fraud Detection Dashboard")
