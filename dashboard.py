@@ -5,7 +5,12 @@ import datetime
 import os
 
 # Load the model
-model = joblib.load("model.pkl")
+# model = joblib.load("model.pkl")
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(current_dir, "model.pkl")
+model = joblib.load(model_path)
+
 
 st.set_page_config(page_title="Fraud Detection Dashboard", layout="centered")
 st.title("🚨 Insurance Fraud Detection Dashboard")
